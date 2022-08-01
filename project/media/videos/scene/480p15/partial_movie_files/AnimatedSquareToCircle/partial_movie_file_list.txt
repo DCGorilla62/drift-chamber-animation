@@ -1,0 +1,5 @@
+# This file is used internally by FFMPEG.
+file 'file:/home/dcalderon/Research/HELIX/drift-chamber-animation/project/media/videos/scene/480p15/partial_movie_files/AnimatedSquareToCircle/3163782288_757100158_223132457.mp4'
+file 'file:/home/dcalderon/Research/HELIX/drift-chamber-animation/project/media/videos/scene/480p15/partial_movie_files/AnimatedSquareToCircle/2201830969_3625506457_2319886907.mp4'
+file 'file:/home/dcalderon/Research/HELIX/drift-chamber-animation/project/media/videos/scene/480p15/partial_movie_files/AnimatedSquareToCircle/2201830969_279096507_2319886907.mp4'
+file 'file:/home/dcalderon/Research/HELIX/drift-chamber-animation/project/media/videos/scene/480p15/partial_movie_files/AnimatedSquareToCircle/2201830969_3396115363_852007885.mp4'
