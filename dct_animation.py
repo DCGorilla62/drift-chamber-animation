@@ -58,7 +58,7 @@ class dct_animation(Scene):
         # drift_line = Arrow(start=RIGHT, end=LEFT, color=GOLD)
         # drift_line = Arrow(start=config.top + DOWN, end=config.top, color=GOLD)
         color=BLACK
-        drift_line = Arrow(config.left_side, config.right_side, color=color).move_to(6.5 * DOWN) #, buff=0)        
+        drift_line = Arrow(0.9 * config.left_side, 0.9 * config.right_side, color=color).move_to(6.5 * DOWN) #, buff=0)        
         t=Text("Drift Field", color=color, font_size = 50).next_to(drift_line, UP)
         # self.add(drift_line, t)
         self.play(FadeIn(drift_line, t))
@@ -72,7 +72,12 @@ class dct_animation(Scene):
         # self.add(dashed)
         self.play(FadeIn(dashed))
 
-#        self.play(FadeOut(drift_line, t))
+        sensor = Line(2*config.top, 2*config.bottom).shift(config.left_side * 0.9)
+        cathode = Line(2*config.top, 2*config.bottom).shift(config.right_side * 0.9)
+
+        self.add(sensor, cathode)
+
+        #cself.play(FadeOut(drift_line, t))
         
         # d1 = Line(0.9 * frame_width * LEFT / 2, 0.9 * frame_width * RIGHT/ 2).to_edge(DOWN)
         # self.add(d1)
@@ -89,6 +94,7 @@ class dct_animation(Scene):
         self.play(FadeIn(center_particle))
         self.wait(1)
     def downgoing_particle(self):
+        
         self.wait()
     def electron(self):
         self.wait()
