@@ -1,0 +1,4 @@
+# This file is used internally by FFMPEG.
+file 'file:/home/dcalderon/Research/HELIX/drift-chamber-animation/media/videos/dct_animation/1920p30/partial_movie_files/dct_animation/2684900237_4211841932_1655369218.mp4'
+file 'file:/home/dcalderon/Research/HELIX/drift-chamber-animation/media/videos/dct_animation/1920p30/partial_movie_files/dct_animation/2456526111_1076466279_3552011213.mp4'
+file 'file:/home/dcalderon/Research/HELIX/drift-chamber-animation/media/videos/dct_animation/1920p30/partial_movie_files/dct_animation/2456526111_3023951634_2854465754.mp4'

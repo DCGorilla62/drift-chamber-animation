@@ -1,6 +1,20 @@
 import numpy as np
 from manim import *
 
+# config.background_color = BLACK #DARK_BLUE
+config.frame_height = 10
+config.frame_widthe = 10
+
+config.pixel_height = 500
+config.pixel_width = 500
+
+config.background_color = GREY
+# config.frame_width = 9
+# config.frame_height = 16
+
+# config.pixel_width = 1080
+# config.pixel_height = 1920
+
 '''
 What I want to do first is create all the objects that I need
 Drift field line
@@ -24,36 +38,54 @@ fancy text
 
 class dct_animation(Scene):
     def construct(self):
-        self.current_plot()
+        # self.current_plot()
         # self.show_axis()
-        # self.drift_field()
+        self.drift_field()
         # self.dashed_line()
         self.center_particle()
         # self.downgoing_particle()
         # self.electron()
         # self.positive_ion()
-        
+        self.wait(10)
 
         
     def drift_field(self):
-        pixel_height = config["pixel_height"] # 1080 is default
-        pixel_width = config["pixel_width"] # 1920 is default
-        frame_width = config["frame_width"]
-        frame_height = config["frame_height"]
+        # pixel_height = config["pixel_height"] # 1080 is default
+        # pixel_width = config["pixel_width"] # 1920 is default
+        # frame_width = config["frame_width"]
+        # frame_height = config["frame_height"]
+
+        # drift_line = Arrow(start=RIGHT, end=LEFT, color=GOLD)
+        # drift_line = Arrow(start=config.top + DOWN, end=config.top, color=GOLD)
+        color=BLACK
+        drift_line = Arrow(config.left_side, config.right_side, color=color).move_to(6.5 * DOWN) #, buff=0)        
+        t=Text("Drift Field", color=color, font_size = 50).next_to(drift_line, UP)
+        # self.add(drift_line, t)
+        self.play(FadeIn(drift_line, t))
+
+        # self.add(Dot())
+        # d = Arrow(config.left_side, config.right_side).shift(DOWN*2)
+        # dashed = DashedLine(config.left_side, config.right_side, dashed_ratio=0.1).shift(UP*2)
+        # dashed = DashedLine(config.top, config.bottom, dashed_ratio=0.1)
+        dashed = DashedLine(2*config.top, 2*config.bottom, dash_length=0.5, dashed_ratio=0.5)
+        # self.add(d,dashed)
+        # self.add(dashed)
+        self.play(FadeIn(dashed))
+
+#        self.play(FadeOut(drift_line, t))
         
-        self.add(Dot())
-        d1 = Line(0.9 * frame_width * LEFT / 2, 0.9 * frame_width * RIGHT/ 2).to_edge(DOWN)
-        self.add(d1)
-        self.add(Text(str(pixel_width)).next_to(d1, UP))
-        d2 = Line(frame_height * UP / 2, frame_height * DOWN / 2).to_edge(LEFT)
-        self.add(d2)
-        self.add(Text(str('Drift Field')).next_to(d2, RIGHT))
+        # d1 = Line(0.9 * frame_width * LEFT / 2, 0.9 * frame_width * RIGHT/ 2).to_edge(DOWN)
+        # self.add(d1)
+        # self.add(Text(str(pixel_width)).next_to(d1, UP))
+        # d2 = Line(frame_height * UP / 2, frame_height * DOWN / 2).to_edge(LEFT)
+        # self.add(d2)
+        # self.add(Text(str('Drift Field')).next_to(d2, RIGHT))
 
 
-    def dashed_line(self):
-        self.wait()
+    # def dashed_line(self):
+    #     self.wait()
     def center_particle(self):
-        center_particle = Circle(color=RED, radius=0.25, fill_opacity=0.5)
+        center_particle = Circle(color=RED, radius=0.25, fill_opacity=0.75)#.move_to(2 * LEFT)
         self.play(FadeIn(center_particle))
         self.wait(1)
     def downgoing_particle(self):
