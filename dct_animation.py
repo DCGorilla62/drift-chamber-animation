@@ -38,7 +38,7 @@ fancy text
 
 class dct_animation(Scene):
     def construct(self):
-        # self.current_plot()
+
         # self.show_axis()
         self.drift_field()
         # self.dashed_line()
@@ -46,6 +46,7 @@ class dct_animation(Scene):
         # self.downgoing_particle()
         # self.electron()
         # self.positive_ion()
+        self.current_plot()
         self.wait(10)
 
         
@@ -101,47 +102,72 @@ class dct_animation(Scene):
     def positive_ion(self):
         self.wait()
     def current_plot(self):
-        ax = Axes(
-            x_range=[0, 8, 1],
-            y_range=[0, 4, 1],
-            tips=False,
-            axis_config={"include_numbers": True}).scale(0.5)#,
-         #    y_axis_config={"scaling": LogBase(custom_labels=True)},
-        # )
-#        ax.to_corner(UR).scale(0.5)
-        # x_min must be > 0 because log is undefined at 0.
-        # graph = ax.plot(lambda x: x ** 2, x_range=[0.001, 10], use_smoothing=True)
-        # self.add(ax, graph)
-        #self.add(ax.to_corner(UR))#.scale(0.5))
-        self.add(ax.shift(2,2))#.scale(0.5))
-        self.wait()
+        square = Square(color=BLACK, fill_opacity=0.75,
+                        side_length=6.5)
+        square.move_to(4*UR)
         
-    def show_axis(self):
-#        self.wait()
-        x_start = np.array([0,0,0])
-        x_end = np.array([6,0,0])
-        
-        y_start = np.array([0,0,0])
-        y_end = np.array([0,3,0])
-        
-        x_axis = Line(x_start, x_end)
-        y_axis = Line(y_start, y_end)
-        
-        self.add(x_axis, y_axis)
-        self.add_x_labels()
-        
-        self.origin_point = np.array([-4,0,0])
-        self.curve_start = np.array([-3,0,0])
-        
-    def add_x_labels(self):
-        x_labels = [
-            MathTex("\pi"), MathTex("2 \pi"),
-            MathTex("3 \pi"), MathTex("4 \pi"),
-        ]
+        plane = NumberPlane(
+            x_range = (0, 6),
+            y_range = (0, 5),
+            x_length = 6,
+            axis_config={"include_numbers": True},
+        )
+        # plane.center()
+        plane.move_to(4*UR)
+        line_graph = plane.plot_line_graph(
+            x_values = [0, 1.5, 2, 2.8, 4, 6.25],
+            y_values = [1, 3, 2.25, 4, 2.5, 1.75],
+            line_color=GOLD_E,
+            vertex_dot_style=dict(stroke_width=3,  fill_color=PURPLE),
+            stroke_width = 4,
+        )
+        self.add(square, plane, line_graph)
 
-        for i in range(len(x_labels)):
-            x_labels[i].next_to(np.array([-1 + 2*i, 0, 0]), DOWN)
-            self.add(x_labels[i])
+
+
+
+
+#         ax = Axes(
+#             x_range=[0, 8, 1],
+#             y_range=[0, 4, 1],
+#             tips=False,
+#             axis_config={"include_numbers": True}).scale(0.5)#,
+#          #    y_axis_config={"scaling": LogBase(custom_labels=True)},
+#         # )
+# #        ax.to_corner(UR).scale(0.5)
+#         # x_min must be > 0 because log is undefined at 0.
+#         # graph = ax.plot(lambda x: x ** 2, x_range=[0.001, 10], use_smoothing=True)
+#         # self.add(ax, graph)
+#         #self.add(ax.to_corner(UR))#.scale(0.5))
+#         self.add(ax.shift(2,2))#.scale(0.5))
+#         self.wait()
+        
+#     def show_axis(self):
+# #        self.wait()
+#         x_start = np.array([0,0,0])
+#         x_end = np.array([6,0,0])
+        
+#         y_start = np.array([0,0,0])
+#         y_end = np.array([0,3,0])
+        
+#         x_axis = Line(x_start, x_end)
+#         y_axis = Line(y_start, y_end)
+        
+#         self.add(x_axis, y_axis)
+#         self.add_x_labels()
+        
+#         self.origin_point = np.array([-4,0,0])
+#         self.curve_start = np.array([-3,0,0])
+        
+#     def add_x_labels(self):
+#         x_labels = [
+#             MathTex("\pi"), MathTex("2 \pi"),
+#             MathTex("3 \pi"), MathTex("4 \pi"),
+#         ]
+
+#         for i in range(len(x_labels)):
+#             x_labels[i].next_to(np.array([-1 + 2*i, 0, 0]), DOWN)
+#             self.add(x_labels[i])
 
 
 
