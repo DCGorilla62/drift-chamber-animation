@@ -3,4 +3,5 @@ file 'file:/home/dcalderon/Research/HELIX/drift-chamber-animation/media/videos/d
 file 'file:/home/dcalderon/Research/HELIX/drift-chamber-animation/media/videos/dct_animation/500p60/partial_movie_files/dct_animation/38605878_3230573507_3335900199.mp4'
 file 'file:/home/dcalderon/Research/HELIX/drift-chamber-animation/media/videos/dct_animation/500p60/partial_movie_files/dct_animation/38605878_1692839527_259721797.mp4'
 file 'file:/home/dcalderon/Research/HELIX/drift-chamber-animation/media/videos/dct_animation/500p60/partial_movie_files/dct_animation/38605878_1076466279_3911285776.mp4'
-file 'file:/home/dcalderon/Research/HELIX/drift-chamber-animation/media/videos/dct_animation/500p60/partial_movie_files/dct_animation/38605878_3023951634_283475258.mp4'
+file 'file:/home/dcalderon/Research/HELIX/drift-chamber-animation/media/videos/dct_animation/500p60/partial_movie_files/dct_animation/38605878_2141384713_1533062976.mp4'
+file 'file:/home/dcalderon/Research/HELIX/drift-chamber-animation/media/videos/dct_animation/500p60/partial_movie_files/dct_animation/38605878_3023951634_83427765.mp4'

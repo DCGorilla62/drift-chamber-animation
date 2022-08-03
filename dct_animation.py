@@ -8,7 +8,7 @@ config.frame_widthe = 10
 config.pixel_height = 500
 config.pixel_width = 500
 
-config.background_color = GREY
+config.background_color = GREY#BLUE#GREY
 # config.frame_width = 9
 # config.frame_height = 16
 
@@ -103,27 +103,35 @@ class dct_animation(Scene):
         self.wait()
     def current_plot(self):
         square = Square(color=BLACK, fill_opacity=0.75,
-                        side_length=6.5)
-        square.move_to(4*UR)
+                        side_length=6.25)
+        square.move_to(3.75*UR)
         
         plane = NumberPlane(
-            x_range = (0, 6),
+            x_range = (0, 5),
             y_range = (0, 5),
-            x_length = 6,
+            x_length = 5)# ,
             axis_config={"include_numbers": True},
         )
         # plane.center()
-        plane.move_to(4*UR)
-        line_graph = plane.plot_line_graph(
-            x_values = [0, 1.5, 2, 2.8, 4, 6.25],
-            y_values = [1, 3, 2.25, 4, 2.5, 1.75],
-            line_color=GOLD_E,
-            vertex_dot_style=dict(stroke_width=3,  fill_color=PURPLE),
-            stroke_width = 4,
-        )
-        self.add(square, plane, line_graph)
-
-
+        ax = Axes(
+            x_range = (0, 5),
+            y_range = (0, 5),
+            x_length = 5,
+            tips=False)
+        plane.move_to(3.75*UR)
+        ax.move_to(3.75*UR)
+        # ax.to_corner(3.75*UR)
+        # line_graph = plane.plot_line_graph(
+        #     x_values = [0, 1.5, 2, 2.8, 4, 6.25],
+        #     y_values = [1, 3, 2.25, 4, 2.5, 1.75],
+        #     line_color=GOLD_E,
+        #     vertex_dot_style=dict(stroke_width=3,  fill_color=PURPLE),
+        #     stroke_width = 4,
+        # )
+        # self.add(square, plane)#, line_graph)
+        # self.add(square, ax)#, line_graph)
+        #  self.play(FadeIn(square, ax))#, line_graph)
+        self.play(FadeIn(square, plane))#, line_graph)
 
 
 
