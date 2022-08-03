@@ -1,0 +1,6 @@
+# This file is used internally by FFMPEG.
+file 'file:/home/dcalderon/Research/HELIX/drift-chamber-animation/project/tutorials/media/videos/tutorials/720p30/partial_movie_files/DeCasteljau/3352676444_3393672086_1203312261.mp4'
+file 'file:/home/dcalderon/Research/HELIX/drift-chamber-animation/project/tutorials/media/videos/tutorials/720p30/partial_movie_files/DeCasteljau/3549605887_879140603_2636305052.mp4'
+file 'file:/home/dcalderon/Research/HELIX/drift-chamber-animation/project/tutorials/media/videos/tutorials/720p30/partial_movie_files/DeCasteljau/3549605887_1424672130_2269197447.mp4'
+file 'file:/home/dcalderon/Research/HELIX/drift-chamber-animation/project/tutorials/media/videos/tutorials/720p30/partial_movie_files/DeCasteljau/3549605887_2492879628_3416081686.mp4'
+file 'file:/home/dcalderon/Research/HELIX/drift-chamber-animation/project/tutorials/media/videos/tutorials/720p30/partial_movie_files/DeCasteljau/3549605887_2137874342_446841210.mp4'

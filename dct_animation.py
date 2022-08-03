@@ -46,7 +46,8 @@ class dct_animation(Scene):
         # self.downgoing_particle()
         # self.electron()
         # self.positive_ion()
-        self.current_plot()
+        # self.current_plot()
+        self.graph()
         self.wait(10)
 
         
@@ -76,7 +77,7 @@ class dct_animation(Scene):
         sensor = Line(2*config.top, 2*config.bottom).shift(config.left_side * 0.9)
         cathode = Line(2*config.top, 2*config.bottom).shift(config.right_side * 0.9)
 
-        self.add(sensor, cathode)
+        self.play(FadeIn(sensor, cathode))
 
         #cself.play(FadeOut(drift_line, t))
         
@@ -91,7 +92,7 @@ class dct_animation(Scene):
     # def dashed_line(self):
     #     self.wait()
     def center_particle(self):
-        center_particle = Circle(color=RED, radius=0.25, fill_opacity=0.75)#.move_to(2 * LEFT)
+        center_particle = Circle(color=RED, radius=0.25, fill_opacity=0.85).move_to(DOWN)#.move_to(2 * LEFT)
         self.play(FadeIn(center_particle))
         self.wait(1)
     def downgoing_particle(self):
@@ -110,8 +111,8 @@ class dct_animation(Scene):
             x_range = (0, 5),
             y_range = (0, 5),
             x_length = 5)# ,
-            axis_config={"include_numbers": True},
-        )
+            # axis_config={"include_numbers": True},
+        # )
         # plane.center()
         ax = Axes(
             x_range = (0, 5),
@@ -134,8 +135,40 @@ class dct_animation(Scene):
         self.play(FadeIn(square, plane))#, line_graph)
 
 
+    def graph(self): 
+        square = Square(color=BLACK, fill_opacity=0.75, 
+                        side_length=6)
+        # square.move_to(3.75*UR)
+        
+        plane = NumberPlane(
+            x_range = (0, 5, 0.5),
+            y_range = (0, 5, 0.5),
+            x_length = 5,
+            faded_line_ratio=1)# ,
+        #        axis_config={"include_numbers": True},
+        #   )
+        plane.center()
+        plane.move_to(0.3 * UR)
+        # ax = Axes(
+        #     x_range = (0, 5),
+        #     y_range = (0, 5),
+        #     x_length = 5,
+        #     tips=False)
+        # ax.center()
+        square.center()
+        # plane.move_to(3.75*UR)
+        # ax.move_to(3.75*UR)
+        t =Text("Time", font_size=30).next_to(plane, DOWN)
+        t2 =Text("Current", font_size=30).rotate(PI/2).next_to(plane, LEFT)
+        graph = VGroup(square, plane, t, t2).move_to(4*UR)
+        self.play(FadeIn(graph), run_time=2)
+        self.wait(10)
+        # self.add(square, plane, t, t2)
+        # self.add(square, ax)
 
-#         ax = Axes(
+
+        
+        #         ax = Axes(
 #             x_range=[0, 8, 1],
 #             y_range=[0, 4, 1],
 #             tips=False,

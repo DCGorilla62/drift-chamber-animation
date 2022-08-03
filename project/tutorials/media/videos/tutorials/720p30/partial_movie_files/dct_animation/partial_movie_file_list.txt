@@ -1,0 +1,9 @@
+# This file is used internally by FFMPEG.
+file 'file:/home/dcalderon/Research/HELIX/drift-chamber-animation/project/tutorials/media/videos/tutorials/720p30/partial_movie_files/dct_animation/1873245550_80735602_223132457.mp4'
+file 'file:/home/dcalderon/Research/HELIX/drift-chamber-animation/project/tutorials/media/videos/tutorials/720p30/partial_movie_files/dct_animation/2826502757_3230573507_3335900199.mp4'
+file 'file:/home/dcalderon/Research/HELIX/drift-chamber-animation/project/tutorials/media/videos/tutorials/720p30/partial_movie_files/dct_animation/2826502757_1026834113_46135767.mp4'
+file 'file:/home/dcalderon/Research/HELIX/drift-chamber-animation/project/tutorials/media/videos/tutorials/720p30/partial_movie_files/dct_animation/2826502757_329969645_589986320.mp4'
+file 'file:/home/dcalderon/Research/HELIX/drift-chamber-animation/project/tutorials/media/videos/tutorials/720p30/partial_movie_files/dct_animation/2826502757_1692839527_1494075770.mp4'
+file 'file:/home/dcalderon/Research/HELIX/drift-chamber-animation/project/tutorials/media/videos/tutorials/720p30/partial_movie_files/dct_animation/2826502757_1076466279_3055511730.mp4'
+file 'file:/home/dcalderon/Research/HELIX/drift-chamber-animation/project/tutorials/media/videos/tutorials/720p30/partial_movie_files/dct_animation/2826502757_2141384713_1727058847.mp4'
+file 'file:/home/dcalderon/Research/HELIX/drift-chamber-animation/project/tutorials/media/videos/tutorials/720p30/partial_movie_files/dct_animation/1215769276_3023951634_2178309476.mp4'

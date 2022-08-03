@@ -1,7 +1,9 @@
 # This file is used internally by FFMPEG.
 file 'file:/home/dcalderon/Research/HELIX/drift-chamber-animation/media/videos/dct_animation/500p60/partial_movie_files/dct_animation/3539203828_4070943619_223132457.mp4'
 file 'file:/home/dcalderon/Research/HELIX/drift-chamber-animation/media/videos/dct_animation/500p60/partial_movie_files/dct_animation/38605878_3230573507_3335900199.mp4'
-file 'file:/home/dcalderon/Research/HELIX/drift-chamber-animation/media/videos/dct_animation/500p60/partial_movie_files/dct_animation/38605878_1692839527_259721797.mp4'
-file 'file:/home/dcalderon/Research/HELIX/drift-chamber-animation/media/videos/dct_animation/500p60/partial_movie_files/dct_animation/38605878_1076466279_3911285776.mp4'
-file 'file:/home/dcalderon/Research/HELIX/drift-chamber-animation/media/videos/dct_animation/500p60/partial_movie_files/dct_animation/38605878_2141384713_1533062976.mp4'
-file 'file:/home/dcalderon/Research/HELIX/drift-chamber-animation/media/videos/dct_animation/500p60/partial_movie_files/dct_animation/38605878_3023951634_83427765.mp4'
+file 'file:/home/dcalderon/Research/HELIX/drift-chamber-animation/media/videos/dct_animation/500p60/partial_movie_files/dct_animation/38605878_1026834113_46135767.mp4'
+file 'file:/home/dcalderon/Research/HELIX/drift-chamber-animation/media/videos/dct_animation/500p60/partial_movie_files/dct_animation/38605878_1988015332_900303957.mp4'
+file 'file:/home/dcalderon/Research/HELIX/drift-chamber-animation/media/videos/dct_animation/500p60/partial_movie_files/dct_animation/38605878_1076466279_1231368839.mp4'
+file 'file:/home/dcalderon/Research/HELIX/drift-chamber-animation/media/videos/dct_animation/500p60/partial_movie_files/dct_animation/38605878_2529267000_4099716703.mp4'
+file 'file:/home/dcalderon/Research/HELIX/drift-chamber-animation/media/videos/dct_animation/500p60/partial_movie_files/dct_animation/38605878_3023951634_3415527617.mp4'
+file 'file:/home/dcalderon/Research/HELIX/drift-chamber-animation/media/videos/dct_animation/500p60/partial_movie_files/dct_animation/38605878_3023951634_779865172.mp4'

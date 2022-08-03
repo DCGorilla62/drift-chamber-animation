@@ -1,0 +1,12 @@
+# This file is used internally by FFMPEG.
+file 'file:/home/dcalderon/Research/HELIX/drift-chamber-animation/project/tutorials/media/videos/tutorials/480p15/partial_movie_files/dct_animation/4226990773_80735602_223132457.mp4'
+file 'file:/home/dcalderon/Research/HELIX/drift-chamber-animation/project/tutorials/media/videos/tutorials/480p15/partial_movie_files/dct_animation/1716265228_3230573507_3335900199.mp4'
+file 'file:/home/dcalderon/Research/HELIX/drift-chamber-animation/project/tutorials/media/videos/tutorials/480p15/partial_movie_files/dct_animation/1716265228_1026834113_46135767.mp4'
+file 'file:/home/dcalderon/Research/HELIX/drift-chamber-animation/project/tutorials/media/videos/tutorials/480p15/partial_movie_files/dct_animation/1716265228_329969645_589986320.mp4'
+file 'file:/home/dcalderon/Research/HELIX/drift-chamber-animation/project/tutorials/media/videos/tutorials/480p15/partial_movie_files/dct_animation/1716265228_3482731616_1494075770.mp4'
+file 'file:/home/dcalderon/Research/HELIX/drift-chamber-animation/project/tutorials/media/videos/tutorials/480p15/partial_movie_files/dct_animation/1716265228_1076466279_629276969.mp4'
+file 'file:/home/dcalderon/Research/HELIX/drift-chamber-animation/project/tutorials/media/videos/tutorials/480p15/partial_movie_files/dct_animation/1716265228_1922027712_3356750139.mp4'
+file 'file:/home/dcalderon/Research/HELIX/drift-chamber-animation/project/tutorials/media/videos/tutorials/480p15/partial_movie_files/dct_animation/1716265228_329969645_1161259207.mp4'
+file 'file:/home/dcalderon/Research/HELIX/drift-chamber-animation/project/tutorials/media/videos/tutorials/480p15/partial_movie_files/dct_animation/1716265228_329969645_3003838641.mp4'
+file 'file:/home/dcalderon/Research/HELIX/drift-chamber-animation/project/tutorials/media/videos/tutorials/480p15/partial_movie_files/dct_animation/1716265228_2141384713_758761496.mp4'
+file 'file:/home/dcalderon/Research/HELIX/drift-chamber-animation/project/tutorials/media/videos/tutorials/480p15/partial_movie_files/dct_animation/1716265228_3023951634_2917754553.mp4'
