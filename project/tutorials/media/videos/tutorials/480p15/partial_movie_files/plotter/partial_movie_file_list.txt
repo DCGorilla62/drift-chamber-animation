@@ -1,4 +1,6 @@
 # This file is used internally by FFMPEG.
-file 'file:/home/dcalderon/Research/HELIX/drift-chamber-animation/project/tutorials/media/videos/tutorials/480p15/partial_movie_files/plotter/4226990773_3370224149_223132457.mp4'
-file 'file:/home/dcalderon/Research/HELIX/drift-chamber-animation/project/tutorials/media/videos/tutorials/480p15/partial_movie_files/plotter/1716265228_4057858109_1485959152.mp4'
-file 'file:/home/dcalderon/Research/HELIX/drift-chamber-animation/project/tutorials/media/videos/tutorials/480p15/partial_movie_files/plotter/1716265228_3023951634_3680012370.mp4'
+file 'file:/home/dcalderon/Research/HELIX/drift-chamber-animation/project/tutorials/media/videos/tutorials/480p15/partial_movie_files/plotter/2193195642_233110933_223132457.mp4'
+file 'file:/home/dcalderon/Research/HELIX/drift-chamber-animation/project/tutorials/media/videos/tutorials/480p15/partial_movie_files/plotter/711062896_1699313665_962877450.mp4'
+file 'file:/home/dcalderon/Research/HELIX/drift-chamber-animation/project/tutorials/media/videos/tutorials/480p15/partial_movie_files/plotter/711062896_2311842923_2007535525.mp4'
+file 'file:/home/dcalderon/Research/HELIX/drift-chamber-animation/project/tutorials/media/videos/tutorials/480p15/partial_movie_files/plotter/711062896_1598252908_3500445888.mp4'
+file 'file:/home/dcalderon/Research/HELIX/drift-chamber-animation/project/tutorials/media/videos/tutorials/480p15/partial_movie_files/plotter/711062896_125286499_1185305685.mp4'

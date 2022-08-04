@@ -1,0 +1,2 @@
+# This file is used internally by FFMPEG.
+file 'file:/home/dcalderon/Research/HELIX/drift-chamber-animation/project/tutorials/media/videos/tutorials/720p30/partial_movie_files/MoveAlongPathExample/719819854_3547339393_397154865.mp4'

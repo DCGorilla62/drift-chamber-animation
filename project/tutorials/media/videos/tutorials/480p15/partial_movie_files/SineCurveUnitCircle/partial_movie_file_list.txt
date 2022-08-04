@@ -1,0 +1,3 @@
+# This file is used internally by FFMPEG.
+file 'file:/home/dcalderon/Research/HELIX/drift-chamber-animation/project/tutorials/media/videos/tutorials/480p15/partial_movie_files/SineCurveUnitCircle/3163782288_2101260726_3371724500.mp4'
+file 'file:/home/dcalderon/Research/HELIX/drift-chamber-animation/project/tutorials/media/videos/tutorials/480p15/partial_movie_files/SineCurveUnitCircle/2201830969_329969645_1250023911.mp4'
