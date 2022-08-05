@@ -1,0 +1,9 @@
+# This file is used internally by FFMPEG.
+file 'file:/home/dcalderon/Research/HELIX/drift-chamber-animation/media/videos/dct_animation/500p15/partial_movie_files/dct_animation/373926572_4070943619_223132457.mp4'
+file 'file:/home/dcalderon/Research/HELIX/drift-chamber-animation/media/videos/dct_animation/500p15/partial_movie_files/dct_animation/263810983_3230573507_3335900199.mp4'
+file 'file:/home/dcalderon/Research/HELIX/drift-chamber-animation/media/videos/dct_animation/500p15/partial_movie_files/dct_animation/263810983_1026834113_46135767.mp4'
+file 'file:/home/dcalderon/Research/HELIX/drift-chamber-animation/media/videos/dct_animation/500p15/partial_movie_files/dct_animation/263810983_3482731616_900303957.mp4'
+file 'file:/home/dcalderon/Research/HELIX/drift-chamber-animation/media/videos/dct_animation/500p15/partial_movie_files/dct_animation/263810983_1076466279_1799370992.mp4'
+file 'file:/home/dcalderon/Research/HELIX/drift-chamber-animation/media/videos/dct_animation/500p15/partial_movie_files/dct_animation/263810983_2529267000_3842679064.mp4'
+file 'file:/home/dcalderon/Research/HELIX/drift-chamber-animation/media/videos/dct_animation/500p15/partial_movie_files/dct_animation/263810983_3023951634_3205396335.mp4'
+file 'file:/home/dcalderon/Research/HELIX/drift-chamber-animation/media/videos/dct_animation/500p15/partial_movie_files/dct_animation/263810983_3023951634_2101079419.mp4'
