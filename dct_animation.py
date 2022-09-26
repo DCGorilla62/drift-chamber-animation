@@ -4,11 +4,9 @@ from manim import *
 # config.background_color = BLACK #DARK_BLUE
 config.frame_height = 10
 config.frame_widthe = 10
-
 config.pixel_height = 500
 config.pixel_width = 500
-
-config.background_color = GREY#BLUE#GREY
+config.background_color = DARKER_GREY
 # config.frame_width = 9
 # config.frame_height = 16
 
@@ -46,13 +44,13 @@ class dct_animation(Scene):
         # self.downgoing_particle()
         # self.electron()
         # self.positive_ion()
-        # self.current_plot()
-        self.graph()
-        self.wait(10)
+        self.current_plot()
+        self.downgoing_particle()
+        # self.graph()
+        self.wait()
 
-        
     def drift_field(self):
-        color=BLACK
+        color=WHITE
         drift_line = Arrow(0.9 * config.left_side, 0.9 * config.right_side, color=color).move_to(6.5 * DOWN) #, buff=0)        
         t=Text("Drift Field", color=color, font_size = 50).next_to(drift_line, UP)
         self.play(FadeIn(drift_line, t))
@@ -64,7 +62,6 @@ class dct_animation(Scene):
         cathode = Line(2*config.top, 2*config.bottom).shift(config.right_side * 0.9)
 
         self.play(FadeIn(sensor, cathode))
-
         
     def center_particle(self):
         center_particle = Circle(color=RED, radius=0.3, fill_opacity=0.75)#.move_to(2 * LEFT)
@@ -73,15 +70,14 @@ class dct_animation(Scene):
         self.wait(1)
 
     def downgoing_particle(self):
-          
-        d = Dot(point=np.array([0., 4.5, 0.]), radius=0.2, 
+        d = Dot(point=np.array([0., 10, 0.]), radius=0.2, 
                 stroke_width=0, fill_opacity=1.0, color=PURE_RED)
         t = Text("Be+", color=BLACK, font_size=20).move_to(d.get_center())
         moving_dot=VGroup(d,t)
         label = MathTex("x").add_updater(lambda m: m.next_to(d, LEFT))
 
         self.add(label)
-        self.play(moving_dot.animate.move_to(DOWN*6), run_time=2)
+        self.play(moving_dot.animate.move_to(DOWN*10), run_time=2)
         self.wait()
         
     def electron(self):
@@ -91,8 +87,7 @@ class dct_animation(Scene):
     def current_plot(self):
         square = Square(color=BLACK, fill_opacity=0.75, 
                         side_length=7)
-        # square.move_to(3.75*UR)
-        
+        square.move_to(3.75*UR)
         plane = NumberPlane(
                     x_range = (0, 6),
                     y_range = (0, 6),
@@ -134,7 +129,6 @@ class dct_animation(Scene):
         dm.add_updater(lambda x: x.become(curve))
         self.play(MoveAlongPath(moving_dot, curve), rate_func=rate_functions.ease_in_quad, run_time=4)
         self.wait(2)
-
 
     #     square = Square(color=BLACK, fill_opacity=0.75,
     #                     side_length=6.25)
@@ -245,8 +239,6 @@ class dct_animation(Scene):
 #         for i in range(len(x_labels)):
 #             x_labels[i].next_to(np.array([-1 + 2*i, 0, 0]), DOWN)
 #             self.add(x_labels[i])
-
-
 
                 
 # class SineCurveUnitCircle(Scene):
